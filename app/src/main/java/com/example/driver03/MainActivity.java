@@ -1,17 +1,14 @@
 package com.example.driver03;
 
 import android.os.Bundle;
-
-import com.example.driver03.ui.gallery.GalleryFragment;
-import com.example.driver03.ui.slideshow.SlideshowFragment;
-import com.example.driver03.ui.tools.ToolsFragment;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
+import android.view.Menu;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
@@ -19,18 +16,17 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.driver03.ui.gallery.GalleryFragment;
+import com.example.driver03.ui.slideshow.SlideshowFragment;
+import com.example.driver03.ui.tools.ToolsFragment;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.view.Menu;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    public  static FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
                         fragmentManager3.beginTransaction().replace(R.id.mainLayout, toolsFragment).commit();
                         break;
 
-
                     default:
                         fab.show();
                         break;
@@ -98,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
     }
 
         @Override
