@@ -32,7 +32,7 @@
                 app:layout_constraintVertical_bias="0.025" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/driverFirstName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -46,7 +46,7 @@
                 app:layout_constraintVertical_bias="0.084" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/driverLastName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -60,7 +60,7 @@
                 app:layout_constraintVertical_bias="0.182" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/driverEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -74,7 +74,7 @@
                 app:layout_constraintVertical_bias="0.28" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/licenceNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -88,11 +88,11 @@
                 app:layout_constraintVertical_bias="0.378" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/birthday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Age"
+                android:hint="BirthDay"
                 android:inputType="textPersonName"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +102,7 @@
                 app:layout_constraintVertical_bias="0.467" />
 
             <EditText
-                android:id="@+id/editText10"
+                android:id="@+id/driverContactNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -116,7 +116,7 @@
                 app:layout_constraintVertical_bias="0.565" />
 
             <EditText
-                android:id="@+id/editText11"
+                android:id="@+id/driverPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -130,7 +130,7 @@
                 app:layout_constraintVertical_bias="0.664" />
 
             <Button
-                android:id="@+id/registerbtn"
+                android:id="@+id/driverRegisterBtn"
                 android:layout_width="133dp"
                 android:layout_height="54dp"
                 android:layout_centerInParent="true"
