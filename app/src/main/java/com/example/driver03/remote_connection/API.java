@@ -1,5 +1,7 @@
 package com.example.driver03.remote_connection;
 
+import com.example.driver03.model.LoginRequest;
+import com.example.driver03.model.LoginResponse;
 import com.example.driver03.model.RegisterRequest;
 import com.example.driver03.model.RegisterResponse;
 
@@ -13,8 +15,8 @@ public interface API {
     @POST("/api/v1.0.0/registerdriver")
     Call<RegisterResponse> registerUser(@Body RegisterRequest registerRequest);
 
-//    @POST("/api/v1.0.0/login")
-//    Call<LoginResponse> loginUser(@Body LoginRequest loginRequest);
+    @POST("/api/v1.0.0/driverlogin")
+    Call<LoginResponse> loginUser(@Body LoginRequest loginRequest);
 //
 //    @POST("/api/v1.0.0/savereviews")
 //    Call<PassengerReviewResponse> passengerReview(@Body PassengerReviewRequest passengerReviewRequest);
