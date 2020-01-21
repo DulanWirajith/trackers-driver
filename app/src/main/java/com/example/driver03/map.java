@@ -54,7 +54,7 @@ public class map extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map=googleMap;
-        LatLng pp=new LatLng(8.3534,80.5049);
+        LatLng pp=new LatLng(8.352865,80.502446);
 //        map.animateCamera(CameraUpdateFactory.zoomTo(15.0f));
 //        map.getUiSettings().setZoomControlsEnabled(true);
 
@@ -62,5 +62,6 @@ public class map extends Fragment implements OnMapReadyCallback {
         option.position(pp).title("Mihinthale");
         map.addMarker(option);
         map.moveCamera(CameraUpdateFactory.newLatLng(pp));
+        map.animateCamera( CameraUpdateFactory.zoomTo( 16.0f ) );
     }
 }
