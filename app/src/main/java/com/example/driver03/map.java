@@ -2,14 +2,13 @@ package com.example.driver03;
 
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -54,12 +53,15 @@ public class map extends Fragment implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-//        LatLng pp= new LatLng(11.1551,104.22552);
-//        MarkerOptions option =new MarkerOptions();
-//        option.position(pp).title("daa");
-//        map.addMarker(option);
-//        map.moveCamera(CameraUpdateFactory.newLatLng(pp));
+        map=googleMap;
+        LatLng pp=new LatLng(8.352865,80.502446);
+//        map.animateCamera(CameraUpdateFactory.zoomTo(15.0f));
+//        map.getUiSettings().setZoomControlsEnabled(true);
 
-
+        MarkerOptions option =new MarkerOptions();
+        option.position(pp).title("Mihinthale");
+        map.addMarker(option);
+        map.moveCamera(CameraUpdateFactory.newLatLng(pp));
+        map.animateCamera( CameraUpdateFactory.zoomTo( 16.0f ) );
     }
 }
